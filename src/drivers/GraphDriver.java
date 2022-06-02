@@ -8,6 +8,7 @@ import graph.DependencyResolution;
 import graph.DepthFirstSearch;
 import graph.DepthFirstSearchIterative;
 import graph.NumberOfIslands;
+import graph.ShortestPathBFS;
 import graph.TopologicalSort;
 import graph.WordLadder;
 import util.Node;
@@ -105,6 +106,19 @@ public class GraphDriver {
         WordLadder wordLadder = new WordLadder();
 //        System.out.println("count=" + wordLadder.ladderLength("hit", "cog", wordList1));
         System.out.println("count=" + wordLadder.ladderLength("a", "c", wordList2));
+    }
+
+    public void shortestPathBFS() {
+
+        List<List<Integer>> adjList = new ArrayList<>();
+
+        adjList.add(0, Arrays.asList(1, 2));
+        adjList.add(1, Arrays.asList(0, 2));
+        adjList.add(2, Arrays.asList(0, 1));
+        adjList.add(3, Arrays.asList());
+
+        ShortestPathBFS shortestPathBFS = new ShortestPathBFS();
+        shortestPathBFS.printShortestDistance(adjList, 0, 3, 4);
     }
 
     ///////

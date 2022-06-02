@@ -4,6 +4,7 @@ import drivers.ArrayDriver;
 import drivers.BackTrackingDriver;
 import drivers.DynamicProgrammingDriver;
 import drivers.GraphDriver;
+import drivers.HeapDriver;
 import drivers.LinkedListDriver;
 import drivers.MiscDriver;
 import drivers.StackDriver;
@@ -26,6 +27,7 @@ public class Driver {
         MiscDriver miscDriver = new MiscDriver();
         LinkedListDriver linkedListDriver = new LinkedListDriver();
         BackTrackingDriver backTrackingDriver = new BackTrackingDriver();
+        HeapDriver heapDriver = new HeapDriver();
 
         /****************** Array *******************/
 //        arrayDriver.twoSum();
@@ -56,7 +58,8 @@ public class Driver {
 //        treeDriver.constructBTFromPreorderAndInorder();
 //        treeDriver.sumTree();
 //        treeDriver.rootToLeafPaths();
-        treeDriver.zigZagTreeTraversal();
+//        treeDriver.zigZagTreeTraversal();
+//        treeDriver.trie();
 
         /****************** DP *******************/
 //        dpDriver.houseRobber();
@@ -73,7 +76,7 @@ public class Driver {
         /****************** Graph *******************/
 //        graphDriver.depthFirstSearch();
 //        graphDriver.depthFirstSearchIterative();
-//        graphDriver.breadthFirstSearchIterative();
+        graphDriver.breadthFirstSearchIterative();
 //        graphDriver.depthFirstSearchAdjList();
 //        graphDriver.topologicalSort();
 //        graphDriver.dependencyResolution();
@@ -82,6 +85,7 @@ public class Driver {
 //        graphDriver.numberOfIslands();
 //        graphDriver.cloneGraph();
 //        graphDriver.wordLadder();
+//        graphDriver.shortestPathBFS();
 
 
         /****************** String *******************/
@@ -98,6 +102,9 @@ public class Driver {
 //        backTrackingDriver.letterCombinationsOfPhoneNumber();
 //        backTrackingDriver.combinationSum();
 //        backTrackingDriver.combinationSum2();
+//        backTrackingDriver.combinations();
+//        backTrackingDriver.restoreIPAddresses();
+//        backTrackingDriver.partitionToKEqualSumSubsets();
 
 
         /****************** Company *******************/
@@ -115,8 +122,15 @@ public class Driver {
         /****************** Sliding Window *******************/
 
 
+        /****************** Sliding Window *******************/
+//        heapDriver.medianFinder();
+
+
         /****************** Misc *******************/
 //        miscDriver.primeFactors();
+//        miscDriver.longestRepeatingCharacterReplacement();
+//        miscDriver.courseResolution();
+//        miscDriver.findUniqueBinaryString();
 
 //        List<Integer> items = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 //        Collections.rotate(items, - 3);

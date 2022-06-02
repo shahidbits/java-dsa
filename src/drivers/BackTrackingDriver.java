@@ -2,11 +2,14 @@ package drivers;
 
 import backtracking.CombinationSum;
 import backtracking.CombinationSum2;
+import backtracking.Combinations;
 import backtracking.LetterCombinationsOfPhoneNumber;
 import backtracking.NQueenProblem;
 import backtracking.PalindromePartitioning;
+import backtracking.PartitionToKEqualSumSubsets;
 import backtracking.Permutations;
 import backtracking.Permutations2;
+import backtracking.RestoreIPAddresses;
 import backtracking.SubSets;
 import backtracking.WordSearch;
 
@@ -64,5 +67,22 @@ public class BackTrackingDriver {
     public void combinationSum2() {
         CombinationSum2 combinationSum2 = new CombinationSum2();
         combinationSum2.combinationSum2(new int[]{10, 1, 2, 7, 6, 1, 5}, 8);
+    }
+
+    public void combinations() {
+        Combinations combinations = new Combinations();
+        combinations.combine(4, 2);
+    }
+
+    public void restoreIPAddresses() {
+        RestoreIPAddresses restoreIPAddresses = new RestoreIPAddresses();
+//        restoreIPAddresses.restoreIpAddresses("25525511135");
+//        restoreIPAddresses.restoreIpAddresses("101023");
+        restoreIPAddresses.restoreIpAddresses("255255255255");
+    }
+
+    public void partitionToKEqualSumSubsets() {
+        PartitionToKEqualSumSubsets partitionToKEqualSumSubsets = new PartitionToKEqualSumSubsets();
+        System.out.println("partition=" + partitionToKEqualSumSubsets.canPartitionKSubsets(new int[]{4, 3, 2, 3, 5, 2, 1}, 4));
     }
 }

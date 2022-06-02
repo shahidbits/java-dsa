@@ -13,6 +13,7 @@ import tree.RootToLeafPaths;
 import tree.SortedArrayToBalancedBST;
 import tree.SumRootToLeafNumbers;
 import tree.SumTree;
+import tree.Trie;
 import tree.UniqueBST;
 import tree.ValidateBST;
 import tree.ZigZagTreeTraversal;
@@ -203,6 +204,22 @@ public class TreeDriver {
 
         ZigZagTreeTraversal zigZagTreeTraversal = new ZigZagTreeTraversal();
         zigZagTreeTraversal.traverse(root);
+    }
+
+    public void trie() {
+
+        Trie trie = new Trie();
+
+        trie.insert("apple");
+        trie.insert("applet");
+        trie.insert("ape");
+        trie.insert("appi");
+
+        System.out.println("search(api)=" + trie.search("api"));
+        System.out.println("search(ape)=" + trie.search("ape"));
+        System.out.println("startsWith(ap)=" + trie.startsWith("api"));
+
+        System.out.println(trie);
     }
 
     ///// Util Methods

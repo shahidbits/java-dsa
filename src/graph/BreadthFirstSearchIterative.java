@@ -25,9 +25,9 @@ public class BreadthFirstSearchIterative {
 
             Node front = nodeQueue.remove();
 
-            if (visited.contains(front)) {
-                continue;
-            }
+//            if (visited.contains(front)) {
+//                continue;
+//            }
 
             System.out.print(front.val + " ");
             visited.add(front);

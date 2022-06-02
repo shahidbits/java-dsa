@@ -24,9 +24,9 @@ public class DepthFirstSearchIterative {
 
             Node topNode = nodeStack.pop();
 
-            if (visited.contains(topNode)) {
-                continue;
-            }
+//            if (visited.contains(topNode)) {
+//                continue;
+//            }
 
             System.out.print(topNode.val + " ");
             visited.add(topNode);
