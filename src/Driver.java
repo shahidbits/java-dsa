@@ -7,6 +7,7 @@ import drivers.GraphDriver;
 import drivers.HeapDriver;
 import drivers.LinkedListDriver;
 import drivers.MiscDriver;
+import drivers.SlidingWindowDriver;
 import drivers.StackDriver;
 import drivers.StringDriver;
 import drivers.TreeDriver;
@@ -28,6 +29,7 @@ public class Driver {
         LinkedListDriver linkedListDriver = new LinkedListDriver();
         BackTrackingDriver backTrackingDriver = new BackTrackingDriver();
         HeapDriver heapDriver = new HeapDriver();
+        SlidingWindowDriver slidingWindowDriver = new SlidingWindowDriver();
 
         /****************** Array *******************/
 //        arrayDriver.twoSum();
@@ -71,12 +73,16 @@ public class Driver {
 //        dpDriver.decodeWays();
 //        dpDriver.interleavingString();
 //        dpDriver.longestIncreasingSubsequence();
+//        dpDriver.canJump();
+//        dpDriver.jump();
+//        dpDriver.trap();
+//        dpDriver.numDistinct();
 
 
         /****************** Graph *******************/
 //        graphDriver.depthFirstSearch();
 //        graphDriver.depthFirstSearchIterative();
-        graphDriver.breadthFirstSearchIterative();
+//        graphDriver.breadthFirstSearchIterative();
 //        graphDriver.depthFirstSearchAdjList();
 //        graphDriver.topologicalSort();
 //        graphDriver.dependencyResolution();
@@ -120,6 +126,9 @@ public class Driver {
 
 
         /****************** Sliding Window *******************/
+//        slidingWindowDriver.lengthOfLongestSubstring();
+//        slidingWindowDriver.maximumUniqueSubarray();
+        slidingWindowDriver.minimumWindowSubstring();
 
 
         /****************** Sliding Window *******************/

@@ -3,11 +3,15 @@ package drivers;
 import dp.ClimbingStairs;
 import dp.CoinChange2;
 import dp.DecodeWays;
+import dp.DistinctSubsequences;
 import dp.HouseRobber;
 import dp.InterleavingString;
+import dp.JumpGame;
+import dp.JumpGame2;
 import dp.LongestIncreasingSubsequence;
 import dp.MinimumNumberForTickets;
 import dp.TargetSum;
+import dp.TrappingRainWater;
 import dp.WordBreak;
 
 import java.util.Arrays;
@@ -63,5 +67,26 @@ public class DynamicProgrammingDriver {
     public void longestIncreasingSubsequence() {
         LongestIncreasingSubsequence longestIncreasingSubsequence = new LongestIncreasingSubsequence();
         System.out.println("max=" + longestIncreasingSubsequence.lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18}));
+    }
+
+    public void canJump() {
+        JumpGame jumpGame = new JumpGame();
+        System.out.println("canJump=" + jumpGame.canJump((new int[]{2, 3, 1, 1, 4})));
+        System.out.println("canJump=" + jumpGame.canJump((new int[]{3, 2, 1, 0, 4})));
+    }
+
+    public void jump() {
+        JumpGame2 jumpGame2 = new JumpGame2();
+        System.out.println("jumps=" + jumpGame2.jump((new int[]{2, 3, 1, 1, 4})));
+    }
+
+    public void numDistinct() {
+        DistinctSubsequences distinctSubsequences = new DistinctSubsequences();
+        System.out.println("count=" + distinctSubsequences.numDistinct("rabbbit", "rabbit"));
+    }
+
+    public void trap() {
+        TrappingRainWater trappingRainWater = new TrappingRainWater();
+        System.out.println("trap=" + trappingRainWater.trap(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}));
     }
 }
